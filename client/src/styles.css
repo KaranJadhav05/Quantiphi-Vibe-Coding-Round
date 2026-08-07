@@ -42,10 +42,31 @@ input {
 
 .sidebar__header,
 .content__header,
-.product-meta {
+.product-meta,
+.content__actions {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.content__actions {
+  gap: 12px;
+}
+
+.sort-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  padding: 8px 12px;
+  border-radius: 999px;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+}
+
+.sort-control select {
+  border: none;
+  background: transparent;
+  outline: none;
 }
 
 .filter-group {

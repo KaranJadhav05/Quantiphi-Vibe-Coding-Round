@@ -34,3 +34,19 @@ export function filterProducts(products, filters = {}) {
     return matchesCategory && matchesPrice && matchesRating;
   });
 }
+
+export function sortProducts(products, sortOption = "default") {
+  const normalizedProducts = Array.isArray(products) ? [...products] : [];
+
+  if (sortOption === "price-asc") {
+    return normalizedProducts.sort((a, b) => Number(a.price) - Number(b.price));
+  }
+
+  if (sortOption === "rating-desc") {
+    return normalizedProducts.sort(
+      (a, b) => Number(b.rating) - Number(a.rating),
+    );
+  }
+
+  return normalizedProducts;
+}
