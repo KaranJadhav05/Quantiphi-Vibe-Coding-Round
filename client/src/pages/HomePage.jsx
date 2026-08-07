@@ -142,6 +142,7 @@ function HomePage() {
           products={filteredProducts}
           onReset={resetFilters}
           onAddToCart={addToCart}
+          onUpdateQuantity={updateQuantity}
           cartItems={cartItems}
         />
       </main>

@@ -346,11 +346,25 @@ input {
   cursor: pointer;
 }
 
-.cart-button {
+.card-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   margin-top: 12px;
+}
+
+.cart-button {
   background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
   color: white;
   box-shadow: 0 8px 20px rgba(79, 70, 229, 0.2);
+}
+
+.quantity-control--card {
+  justify-content: center;
+  background: #f3f4f6;
+  padding: 6px 10px;
+  border-radius: 999px;
+  align-self: flex-start;
 }
 
 .remove-button {
